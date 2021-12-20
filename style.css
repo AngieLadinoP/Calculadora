@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    Justify-content: center;
+    /* Alinear de manera horizontal respecto al padre*/
+    align-items: center;
+    /* 'Alinear de manera vertical' */
+    flex-direction: column;
+}
+
+.contenedor_principal {
+    width: 30%;
+    margin: auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.resultado {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(224, 157, 157);
+}
+
+.contenedor_botones {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.botonOperacion {
+    width: 100px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(196, 18, 18);
+    border: solid px grey;
+    padding: 5px;
+    margin: auto;
+}
+
+#botonSuma {
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+}
+
+#botonResta {
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto
+}

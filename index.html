@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Clase JavaScript calculadora</title>
+</head>
+
+<body>
+    <main class="contenedor_principal">
+
+        <h1>Calculadora</h1>
+        <form class="formulario">
+            <label for="">Ingrese el primer número: </label>
+            <input class="valor1" type="text" placeholder="número 1">
+            <label for="">Ingrese el segundo número: </label>
+            <input class="valor2" type="text" placeholder="número 2">
+            <div class="contenedor_botones">
+                <input type="button" value="+" class="botonOperacion" id="botonSuma" onclick="calcularSuma()">
+                <input type="button" value="-" class="botonOperacion" id="botonResta" onclick="calcularResta()">
+                <input type="button" value="*" class="botonOperacion" id="botonMultiplicacion" onclick="calcularMultiplicacion()">
+                <input type="button" value="/" class="botonOperacion" id="botonDivision" onclick="calcularDivision()">
+            </div>
+            <!-- Se puede poner un botón con un imput o con un botón especificamente -->
+        </form>
+        <p class="resultado"></p>
+    </main>
+
+</body>
+
+</html>
